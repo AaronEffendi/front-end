@@ -3,7 +3,6 @@ import {
 	Calculate,
 	Category,
 	Delete,
-	Edit,
 	PriceChange,
 	Search,
 } from "@mui/icons-material";
@@ -36,13 +35,14 @@ import axios from "axios";
 import Header from "../components/head";
 import Template from "../layouts/template";
 import Cookies from "cookies";
+import { config } from "../constant/api_config";
 
 // for redirect if user not login
 export async function getServerSideProps({ req, res }) {
 	// to get cookies from server side
 	const cookies = new Cookies(req, res);
 	let cookiesAuth = cookies.get("auth");
-	if (cookiesAuth == "") {
+	if (cookiesAuth == "" || cookiesAuth == undefined) {
 		return {
 			redirect: {
 				destination: "/login",
@@ -120,11 +120,9 @@ export default function Home(props) {
 			setMessageFailed("");
 		}, 10000);
 
-		// for getting item list from API
+		// for getting items list from API
 		try {
-			axios
-				.get("http://localhost:8080/api/v1/items")
-				.then((res) => setItems(res.data));
+			axios.get(`${config.url}/items`).then((res) => setItems(res.data));
 		} catch (e) {
 			setMessage("Failed to get data, please reload the page!");
 		}
@@ -159,7 +157,7 @@ export default function Home(props) {
 		const ids = selectedItems;
 		try {
 			await axios
-				.post(`http://localhost:8080/api/v1/items/delete`, ids, {
+				.post(`${config.url}/items/delete`, ids, {
 					headers: {
 						"Content-Type": "application/json",
 					},
@@ -167,10 +165,12 @@ export default function Home(props) {
 				.then(() => {
 					setMessageSuccess(`Product has been successfully deleted!`);
 					setOpenDelete(false);
+					setSelectedItems([]);
 				});
 		} catch (e) {
 			setMessageFailed(`Failed to delete product some or all product`);
 			setOpenDelete(false);
+			setSelectedItems([]);
 		}
 	};
 
@@ -180,7 +180,7 @@ export default function Home(props) {
 		const item = { name: name, quantity: quantity, price: price };
 		try {
 			await axios
-				.delete(`http://localhost:8080/api/v1/items/${id}`, {
+				.delete(`${config.url}/items/${id}`, {
 					headers: {
 						"Content-Type": "application/json",
 					},
@@ -205,7 +205,7 @@ export default function Home(props) {
 		const item = { name: name, quantity: quantity, price: price };
 		try {
 			await axios
-				.put(`http://localhost:8080/api/v1/items/${id}`, item, {
+				.put(`${config.url}/items/${id}`, item, {
 					headers: {
 						"Content-Type": "application/json",
 					},
@@ -229,7 +229,7 @@ export default function Home(props) {
 		const item = { name: name, quantity: quantity, price: price };
 		try {
 			await axios
-				.post(`http://localhost:8080/api/v1/items/save`, item, {
+				.post(`${config.url}/items/save`, item, {
 					headers: {
 						"Content-Type": "application/json",
 					},
@@ -450,9 +450,7 @@ export default function Home(props) {
 						<h3 className="paper-title">Delete Product</h3>
 						<Divider orientation="horizontal" className="divider-paper" />
 						<form className="form-modal">
-							<Typography>
-								<h4>Are you sure you want to delete all this items?</h4>
-							</Typography>
+							<h4>Are you sure you want to delete all this items?</h4>
 							<Button
 								className="button-form btn-red"
 								type="button"

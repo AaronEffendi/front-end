@@ -15,6 +15,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Header from "../components/head";
+import { config } from "../constant/api_config";
 
 export default function SignIn(props) {
 	const cookies = require("cookie-cutter");
@@ -34,7 +35,7 @@ export default function SignIn(props) {
 		const user = { username: username, password: password };
 		try {
 			await axios
-				.post("http://localhost:8080/api/v1/login", user, {
+				.post(`${config.url}/login`, user, {
 					headers: {
 						"Content-Type": "application/json",
 						Authorization: "Bearer ${token}",

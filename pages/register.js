@@ -22,6 +22,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Header from "../components/head";
+import { config } from "../constant/api_config";
 
 export default function SignUp(props) {
 	const cookies = require("cookie-cutter");
@@ -45,7 +46,7 @@ export default function SignUp(props) {
 			const user = { username: username, email: email, password: password };
 			try {
 				await axios
-					.post("http://localhost:8080/api/v1/register", user, {
+					.post(`${config.url}/register`, user, {
 						headers: {
 							"Content-Type": "application/json",
 							Authorization: "Bearer ${token}",
