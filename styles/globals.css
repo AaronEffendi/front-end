@@ -1,91 +1,91 @@
 html,
 body {
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 0;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit !important;
-  text-decoration: none !important;
+  color: inherit;
+  text-decoration: none;
 }
 
 * {
-  box-sizing: border-box !important;
+  box-sizing: border-box;
 }
 
 .main {
-  min-height: 100vh !important;
-  padding: 4rem 0 !important;
-  flex: 1 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-template {
-  min-height: 100vh !important;
-  padding: 2rem 0 !important;
-  flex: 1 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
+  min-height: 100vh;
+  padding: 2rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .table{
-  width: 100% !important;
-  height: 100px !important;
+  width: 100%;
+  height: 100px;
 }
 
 .navbar{
-  color: #16171a !important;
-  text-decoration: none !important;
+  color: #16171a;
+  text-decoration: none;
 }
 
 .navbar:hover{
-  color: blue !important;
+  color: blue;
 }
 
 .bg-signIn{
-	background: linear-gradient(to right, rgba(103, 58, 183, 1) 0, rgba(103, 58, 183, 0.5) 50%, rgba(17, 205, 239, 0.5), rgba(17, 205, 239, 1)) !important;
+	background: linear-gradient(to right, rgba(103, 58, 183, 1) 0, rgba(103, 58, 183, 0.5) 50%, rgba(17, 205, 239, 0.5), rgba(17, 205, 239, 1));
 }
 
 .loginLogo{
-  background-color: rgb(103, 58, 183) !important;
+  background-color: rgb(103, 58, 183);
 }
 
 .rounded-card{
-  border-radius: 5% !important;
-  height: 55vh !important;
-  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.08) !important;
+  border-radius: 5%;
+  height: 55vh;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.08);
 }
 
 .rounded-card-2{
-  border-radius: 5% !important;
-  height: 75vh !important;
-  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.08) !important;
+  border-radius: 5%;
+  height: 75vh;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.08);
 }
 
 .button-style{
-  margin: 8px 0 !important;
-  color: #fff !important;
-  background-color: rgba(103, 58, 183, 0.8) !important;
+  margin: 8px 0;
+  color: #fff;
+  background-color: rgba(103, 58, 183, 0.8);
 }
 
 .button-style:hover{
-  margin: 8px 0 !important;
-  color: #fff !important;
-  background-color: rgba(103, 58, 183, 1) !important;
+  margin: 8px 0;
+  color: #fff;
+  background-color: rgba(103, 58, 183, 1);
 }
 
 .form-control{
-  margin: 6px 0 !important;
-  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02) !important;
-	border: 0 !important;
-	transition: box-shadow 0.15s ease !important;
-  border-radius: 5% !important;
+  margin: 6px 0;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+	border: 0;
+	transition: box-shadow 0.15s ease;
+  border-radius: 5%;
 }
 
 .form-control:focus{
@@ -93,39 +93,39 @@ a {
 }
 
 .text-light{
-  margin-top: 23px !important;
-  color: #adb5bd !important;
-  text-decoration: none !important;
+  margin-top: 23px;
+  color: #adb5bd;
+  text-decoration: none;
 }
 
 .text-light-2{
-  color: #adb5bd !important;
+  color: #adb5bd;
 }
 
 .text-purple{
-  color: rgb(103, 58, 183) !important;
-  text-decoration: none !important;
+  color: rgb(103, 58, 183);
+  text-decoration: none;
 }
 
 .text-light:hover{
-	color: #838f9b !important;
+	color: #838f9b;
 }
 
 .card-style{
-  padding: 34px !important;
+  padding: 34px;
 }
 
 .mt-10{
-  margin-top: 10px !important;
+  margin-top: 10px;
 }
 
 .text-white{
-  color: #fff !important;
+  color: #fff;
 }
 
 .checkbox-form{
-  float: left !important;
-  color: #adb5bd !important;
+  float: left;
+  color: #adb5bd;
 }
 
 .checkbox-form:hover{
@@ -133,232 +133,232 @@ a {
 }
 
 .box-style{
-  margin-left: 30% !important;
-  margin-right: 30% !important;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .paper{
-  border-radius: 5% !important;
-  height: 50vh !important;
-  width: 100% !important;
-  margin-top: 25vh !important;
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center !important;
-  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.08) !important;
+  border-radius: 5%;
+  height: 50vh;
+  width: 100%;
+  margin-top: 25vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.08);
 }
 
 .paper-mini{
-  border-radius: 5% !important;
-  height: 30% !important;
-  width: 100% !important;
-  margin-top: 35% !important;
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center !important;
-  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.08) !important;
+  border-radius: 5%;
+  height: 30%;
+  width: 100%;
+  margin-top: 35%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.08);
 }
 
 .ml-15{
-  margin-left: 15px !important;
+  margin-left: 15px;
 }
 
 .appbar-style{
-  position: sticky !important;
-  background-color: rgba(103, 58, 183, 0.85) !important;
+  position: sticky;
+  background-color: rgba(103, 58, 183, 0.85);
 }
 
 .icon{
-  display: flex !important;
+  display: flex;
 }
 
 .icon-label{
-  display: none !important;
+  display: none;
 }
 
 .sb{
-  width: 100% !important;
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: flex-end !important;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .mr-15{
-  margin-right: 15px !important;
+  margin-right: 15px;
 }
 
 .text-red{
-  color: red !important;
-  float: left !important;
+  color: red;
+  float: left;
 }
 
 .paper-table{
-  width: 100% !important;
+  width: 100%;
 }
 
 .btn-div{
-  display: flex !important;
-  width: 100% !important;
-  justify-content: flex-end !important;
-  margin-bottom: 10px !important;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 10px;
 }
 
 .paper-title{
-  padding-top: 20px !important;
-  margin-bottom: 10px !important;
-  text-align: left !important;
-  padding-left: 30px !important;
-  padding-right: 30px !important;
-  width: 100% !important;
-  text-transform: uppercase !important;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  text-transform: uppercase;
 }
 
 .divider-paper{
-  padding-top: 10px !important;
+  padding-top: 10px;
 }
 
 .form-modal{
-  margin: 15% !important;
+  margin: 15%;
   margin-top: 13%
 }
 
 .edit-modal{
-  justify-content: space-between !important;
-  width: 100% !important;
-  display: flex !important;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
 }
 
 .button-form{
-  display: flex !important;
-  float: right !important;
-  width: 30% !important;
-  margin: 8px 0 !important;
-  margin-top: 20px !important;
-  color: #fff !important;
+  display: flex;
+  float: right;
+  width: 30%;
+  margin: 8px 0;
+  margin-top: 20px;
+  color: #fff;
 }
 
 .btn-green{
-  background-color: #2e7d32 !important;
+  background-color: #2e7d32;
 }
 
 .btn-green:hover{
-  background-color: #145c18 !important;
+  background-color: #145c18;
 }
 
 .btn-blue{
-  background-color: rgba(103, 58, 183, 0.6) !important;
+  background-color: rgba(103, 58, 183, 0.6);
 }
 
 .btn-blue:hover{
-  background-color: rgba(103, 58, 183, 1) !important;
+  background-color: rgba(103, 58, 183, 1);
 }
 
 .btn-red{
-  background-color: #df4759 !important;
+  background-color: #df4759;
 }
 
 .btn-red:hover{
-  background-color: #c21f32 !important;
+  background-color: #c21f32;
 }
 
 .menu-icon-button{
-  display: none !important;
+  display: none;
 }
 
 .search-style{
-  display: flex !important;
-  float: left !important;
-  text-align: left !important;
-  width: 400px !important;
+  display: flex;
+  float: left;
+  text-align: left;
+  width: 400px;
 }
 
 .table-menu{
-  width: 100% !important;
-  margin-bottom: 10px !important;
-  display: flex !important;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
 }
 
 .w-100{
-  width: 100% !important;
+  width: 100%;
 }
 
 .vh-50{
-  width: 300px !important;
+  width: 300px;
 }
 
 .menu-pop{
-  color: white !important;
+  color: white;
 }
 
 .side-menu{
-  color: rgba(103, 58, 183, 1) !important;
+  color: rgba(103, 58, 183, 1);
 }
 
 .center{
-  text-align: center !important;
-  justify-content: center !important;
-  align-items: center !important;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 750px) {
   .box-style{
-    margin-left: 20% !important;
-    margin-right: 20% !important;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   .search-style{
-    width: 250px !important;
+    width: 250px;
   }
 }
 
 @media only screen and (max-width: 799px) {
   .btn-div{
-    justify-content: flex-end !important;
+    justify-content: flex-end;
   }  
   .search-style{
-    width: 300px !important;
+    width: 300px;
   }
   .menu-icon-button{
-    display: flex !important;
-    margin-left: 15px !important;
-    color: #fff !important;
+    display: flex;
+    margin-left: 15px;
+    color: #fff;
   }
   .menu-logo{
-    display: flex !important;
+    display: flex;
   }
 }
 
 @media only screen and (min-width: 800px) {
   .icon-label{
-    display: flex !important;
+    display: flex;
   }
   .icon{
-    display: none !important;
+    display: none;
   }
   .sb{
-    justify-content: space-between !important;
+    justify-content: space-between;
   }
   .navbar-divider{
-    display: none !important;
+    display: none;
   }
 }
 
 @media only screen and (min-width: 1086px) {
   .paper{
-    border-radius: 5% !important;
-    height: 53vh !important;
-    width: 100% !important;
+    border-radius: 5%;
+    height: 53vh;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 1584px) {
   .rounded-card{
-    height: 50vh !important;
+    height: 50vh;
   }    
   .rounded-card-2{
-    height: 66vh !important;
+    height: 66vh;
   }
   .box-style{
-    margin-left: 35% !important;
-    margin-right: 35% !important;
+    margin-left: 35%;
+    margin-right: 35%;
   }
 }
